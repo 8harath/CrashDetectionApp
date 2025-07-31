@@ -1,3 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">CrashDetectionApp</string>
+    <string name="app_name">Crash Detection App</string>
+    
+    <!-- Connection status -->
+    <string name="status_connected">Connected</string>
+    <string name="status_connecting">Connecting...</string>
+    <string name="status_disconnected">Disconnected</string>
+    <string name="status_error">Connection Error</string>
+    
+    <!-- Button texts -->
+    <string name="btn_connect">Connect</string>
+    <string name="btn_disconnect">Disconnect</string>
+    <string name="btn_simulate_single">Simulate Single Crash Event</string>
+    <string name="btn_simulate_multiple">Simulate Multiple Events (5)</string>
+    
+    <!-- Card titles -->
+    <string name="title_connection_status">MQTT Connection Status</string>
+    <string name="title_crash_simulation">Crash Event Simulation</string>
+    <string name="title_last_event">Last Published Event</string>
+    <string name="title_status_messages">Status Messages</string>
+    
+    <!-- Messages -->
+    <string name="msg_ready_to_connect">Ready to connect to MQTT broker</string>
+    <string name="msg_connecting">Connecting to MQTT broker...</string>
+    <string name="msg_connected_success">Connected to MQTT broker successfully!</string>
+    <string name="msg_connect_failed">Failed to connect: %1$s</string>
+    <string name="msg_simulating">Simulating crash event...</string>
+    <string name="msg_published_success">Crash event published successfully!</string>
+    <string name="msg_publish_failed">Failed to publish crash event: %1$s</string>
+    <string name="msg_please_connect">Please connect to MQTT broker first</string>
+    <string name="msg_simulating_multiple">Simulating %1$d crash events...</string>
+    <string name="msg_completed_simulation">Completed simulating %1$d crash events</string>
+    <string name="msg_disconnected">Disconnected from MQTT broker</string>
+    
+    <!-- Event details -->
+    <string name="label_status">Status: %1$s</string>
+    <string name="label_location">Location: %1$s</string>
+    <string name="label_timestamp">Timestamp: %1$s</string>
+    
+    <!-- Description text -->
+    <string name="desc_crash_simulation">Simulate crash detection events and publish to MQTT</string>
 </resources>
