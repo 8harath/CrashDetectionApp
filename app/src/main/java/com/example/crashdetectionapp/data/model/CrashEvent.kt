@@ -22,7 +22,7 @@ data class CrashEvent(
         fun createMockEvent(latitude: Double, longitude: Double): CrashEvent {
             val timestamp = Instant.now()
                 .atZone(ZoneId.systemDefault())
-                .format(DateTimeFormatter.ISO_8601)
+                .format(DateTimeFormatter.ISO_INSTANT)
             
             return CrashEvent(
                 latitude = latitude,
