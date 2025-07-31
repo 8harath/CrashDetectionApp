@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         
         // Initialize ViewModel
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+        viewModel.initialize(this)
         
         // Setup UI observers
         setupObservers()

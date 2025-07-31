@@ -12,8 +12,15 @@ import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel() {
     
-    private val mqttService = MqttService(android.app.Application())
-    private val mqttRepository = MqttRepository(mqttService)
+    private lateinit var mqttService: MqttService
+    private lateinit var mqttRepository: MqttRepository
+    
+    fun initialize(context: android.content.Context) {
+        if (!::mqttService.isInitialized) {
+            mqttService = MqttService(context)
+            mqttRepository = MqttRepository(mqttService)
+        }
+    }
     
     // LiveData for UI state
     private val _connectionStatus = MutableLiveData<ConnectionStatus>()
