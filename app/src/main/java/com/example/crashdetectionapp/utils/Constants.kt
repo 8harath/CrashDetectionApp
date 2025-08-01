@@ -2,7 +2,7 @@ package com.example.crashdetectionapp.utils
 
 object Constants {
     // MQTT Configuration
-    const val MQTT_BROKER_URL = "tcp://192.168.1.100:1883" // Update with your laptop's IP
+    const val MQTT_BROKER_URL = "tcp://10.0.0.100:1883" // Update with your laptop's IP
     const val MQTT_CLIENT_ID = "android_crash_detector"
     const val MQTT_TOPIC = "crash/alerts"
     const val MQTT_QOS = 1
